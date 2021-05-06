@@ -34,7 +34,6 @@ const port = process.env.PORT || 3000;
 
 
 //establecedores
-app.set("port",port);
 app.set("view engine","ejs");
 app.set("views","views");
 
@@ -52,9 +51,9 @@ app.get("/", async(req,res)=>{
 
 
 //escucha del puerto
-http.listen(app.get("port"),()=>{
-    console.log(app.get("port"));
-});
+http.listen(port,()=>{
+    console.log(port);
+})
 
 
 //socket.io
