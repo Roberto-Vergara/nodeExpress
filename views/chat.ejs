@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="/css/chat.css">
+</head>
+<body>
+
+    <header>
+        <h1>Chat</h1>
+        <a href="/">volver</a>
+        
+    </header>
+    <section class="miNombre">
+        <label class="join" for="nombre">ingresa tu nombre:</label>
+        <input type="text" class="nombreUser" id="nombre" required>
+        <button class="crearNombre">go</button>
+    </section>
+    
+
+    <p class="addInfo"></p>
+    <section class="chat">
+        <h3 class="userName">nombre de usuario aqui</h3>
+        <div class="mensajes">
+            <ul class="ul">
+                <!-- <li class="miMensaje">mi texto</li> -->
+                <!-- <li class="suMensaje">su texto</li> -->
+            </ul>
+        </div>
+
+        <div class="actions">
+        <!-- enviar texto -->
+        <input class="text" type="text" placeholder="ingrese su texto" required>
+        <button class="btnSend">enviar</button>
+        </div>
+    </section>
+    
+
+    <script src="/socket.io/socket.io.js" ></script>
+
+    <script src="/js/chat.js"></script>
+</body>
+</html>

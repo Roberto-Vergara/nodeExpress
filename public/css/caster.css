@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://img.eldefinido.cl/portadas/650/2018-11-28-8329HH5529.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

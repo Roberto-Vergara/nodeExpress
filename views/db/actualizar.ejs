@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/crearData.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <header>
+            <h1>actualizar</h1>
+            <a class="a" href="/DB">cancelar</a>
+        </header>
+
+        <form class="form" action="actualizar" method="POST">
+            <label for="animal">tipo de animal</label>
+
+            <input type="text" value="<%= animal %>" name="animal" required>
+
+            <label for="nombre">nombre del animal</label>
+            <input type="text" name="nombre" value="<%= nombre %>" required>
+
+            <input type="hidden" value="<%= id %>" name="id">
+
+            <button type="submit">Actualizar</button>
+        </form>
+    </div>
+
+    <!-- {id:idAnimal,animal:tipoAnimal,nombre:nombreAnimal}) -->
+</body>
+</html>

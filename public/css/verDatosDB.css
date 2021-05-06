@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #200f21;
+}
+
+header{
+    background-color: #630000;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    color: #c6ffc1;
+}
+
+    header h2{
+        align-self: center;
+        margin-left: 10px;
+    }
+
+    nav{
+        align-self: center;
+        display: flex;
+        width: 40%;
+        height: 70%;
+    }
+    .crear{
+        flex-grow: 1;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-right: 1px solid white;
+        background-color: #02475e;
+        justify-content: center;
+        transition: all 0.3s;
+        border-radius: 73px 24px 14px 100px / 0px 0px 0px 62px;
+    }
+    .crear:hover{
+        padding: 15px;
+        background-color: #87a7b3;
+        color: black;
+    }
+
+    .regresar{
+        flex-grow: 1;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        background-color: #02475e;
+        transition: all 0.3s;
+
+    }
+
+    .regresar:hover{
+        padding: 15px;
+        background-color: #87a7b3;
+        color: black;
+    }
+
+table, td, th{
+    border: 1px solid unset;
+}
+table{
+    border-collapse: collapse;
+    background-color: black;
+    margin: 0 auto;
+    width: 70%;
+}
+
+th, td{
+    color: #c6ffc1;
+    padding: 25px;
+    text-align: left;
+    text-indent: 5px;
+    transition: all 0.3s;
+}
+
+
+
+thead{
+    background-color: #f0c929;
+    border-bottom: 1px solid white;
+}
+
+tbody{
+    background-color: #132c33;
+    border-left: 1px solid white;
+}
+
+.edit{
+    color: white;
+    text-decoration: none;
+}
+
+.edit:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.animal{
+    border-right: 1px solid white;
+}

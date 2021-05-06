@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    background-color: #2978b5;
+    color: #c6ffc1;
+
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.texto{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    background-image: url("https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2018/04/insertar-javascript-en-html-1280x720.png");
+    border-radius: 73px 24px 14px 131px / 0px 0px 0px 79px;
+}
+
+
+
+.nav{
+    width: 100%;
+    text-align: center;
+    height: 500px;
+}
+
+.lista{
+    
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+li{
+    background-color: #f0c929;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    transition: background-color 0.1s;
+}
+li:hover{
+    background-color: #e1701a;
+}
+a{
+    color: black;
+    font-size: 20px;
+    transition: all 0.1s;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    font-size: 21px;
+}

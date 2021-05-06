@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/tareas.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">pagina de tareas</h1>
+        <a class="back" href="/">regresar</a>
+    </header>
+
+    <main>
+        
+        <!-- mejorar con mongoDB -->
+        <section class="works">
+            <button class="add">agregar tarea</button>
+            <figure class="figure" >
+                <img class="img" src="https://www.fanvius.cl/medios/2021/01/goku-futbolista.jpg" width="100%" alt="">
+                <figcaption class="text">goku</figcaption>
+                <button class="delete">borrar tarea</button>
+            </figure>
+
+            <div class="tarea">
+                <label class="label" for="do">tarea</label>
+                <input type="text" id="do" class="homework input" required>
+                <label class="label" for="url">url image</label>
+                <input type="text" id="url" class="url input" required>
+                <button class="crear">crear</button>
+                <button class="closeCrear">cerrar</button>
+            </div>
+        </section>
+
+        
+    </main>
+
+    
+
+    <script src="/js/events.js"></script>
+    
+</body>
+</html>
