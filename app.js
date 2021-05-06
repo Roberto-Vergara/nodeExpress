@@ -27,7 +27,7 @@ mongoose.connect(uri, {
     useNewUrlParser: true, useUnifiedTopology: true
 })
     .then(()=>console.log("conexion completa de DB"))
-    .catch("error de conexion a base de datos")
+    .catch("error en la conexion a base de datos")
 
 const port = process.env.PORT || 3000;
 
