@@ -41,6 +41,7 @@ app.set("views","views");
 //rutas
 app.use("/chat",require("./routes/rutaChat"));
 app.use("/DB",require("./routes/rutaDB"));
+app.use("/tareas",require("./routes/tareas"));
 
 
 //portada inicial

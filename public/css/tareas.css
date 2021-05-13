@@ -1,117 +1,159 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body{
-    background-color: #114e60;
+    background-color: #2978b5;
+    color: #c6ffc1;
 }
 
-/* header part */
 .header{
-    background-color: #3c415c;
+    height: 70px;
+    background-color: #34656d;
+    text-indent: 10px;
+}
+
+.header a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+.header a:hover{
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    position: relative;
     
 }
 
-.back{
-    color: white;
+
+
+/* form de tareas */
+.tareaD{
+    background-image: url("https://lh3.googleusercontent.com/proxy/Ump-eYTf_1Nmy6hGjv4VRII1JhHwVSPp9xlwbaIKuaBp88PQFSyJYHoGPpXEz_J1fNqAMzkAm14T5Y3NSv3fQlgar0eZjxwr0Ci_I8tnkDogahtiUFTO3nE3");
+    height: 300px;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    border-radius: 36px 0px 0px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.title{
-    color: white;
-}
+    form{
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
 
-.back:hover{
-    color: lightcyan;
-}
+    .datos{
+        color: black;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
 
-/* ---- */
+    .info{
+        width: 80%;
+        margin-left: 10%;
+        height: 15%;
+        margin-top: 3%;
+        font-size: 100%;
+        outline: none;
+        text-indent: 4%;
+    }
 
-/* main */
+    .fech{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+        .fech label{
+            color: black;
+            font-size: 20px;
+        }
+
+        .fec{
+            font-size: 15px;
+            margin-top: 1%;
+            align-self: flex-end;
+            margin-right: 10%;
+        }
+
+    .crear{
+        width: 50%;
+        height: 10%;
+        align-self: center;
+        margin-top: 5%;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border-radius: 10%;
+        border: none;
+    }
+
+/* */
 
 
-/* parte de de works */
-.works{
-    background-color: black;
-    color: white;
+/* tarjeta */
+.tarjetas{
     width: 70%;
     display: flex;
-    margin: 0 auto;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-.add{
-    margin-top: 0.3%;
-    align-self: flex-start;
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    margin-left: 0.4%;
-    background-color: #151515;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.5s;
+    flex-wrap: wrap;
+    background-color: #206a5d;
+    border-radius: 0 36px 0 0;
 }
 
-.add:hover{
-    background-color: #1a1a2e;
-}
 
-.figure{
-    background-color: #272121;
-    width: 40%;
-    border-bottom: black solid  1px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.delete{
-    align-self:flex-end;
-    height: 30px;
-    width: 30%;
-}
-/* ------ */
-
-
-/* tarea formulario */
-
-.tarea{
-    position: absolute;
-    display: flex;
-    left: 0;
-    top: 23%;
-    flex-direction: column;
-    height: 100%;
-    width: 29%;
-    opacity: 0;
-    display: none;
-    transition: opacity 1s;
-}
-
-.label{
-    align-self: center;
-    font-size: 20px;
-    margin-top: 30px;
-}
-
-.input{
-    align-self: center;
-    width: 95%;
-    height: 10%;
+.tarjeta{
     
+    background-color: #23049d;
+    height: 220px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    border-radius: 5%;
 }
 
-.crear{
-    align-self: center;
-    width: 50%;
-    margin-top: 30px;
-    height: 15%;
-}
+    .asignatura{
+        color: white;
+        background-color: black;
+        height: 20%;
+        border-radius: 10%;
+    }
+    .descripcion{
+        background-color: #23049d;
+        height: 70%;
+        color: white;
+    }
+    .fecha{
+        height: 10%;
+        align-self: flex-start;
+        margin-left: 5%;
+    }
 
-
-
-/* ------ */
+    .borrar{
+        
+        margin-bottom: 2px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: #902100 solid 1px;
+        cursor: pointer;
+        width: 40%;
+        align-self: flex-end;
+    }
